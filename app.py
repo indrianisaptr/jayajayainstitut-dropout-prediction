@@ -66,6 +66,8 @@ if st.button("Prediksi"):
         st.warning(f"⚠️ Risiko Sedang ({proba:.2%})")
     else:
         st.success(f"✅ Risiko Rendah ({proba:.2%})")
+
+st.caption("Klik tombol di atas untuk melihat hasil prediksi.")
     
 st.markdown("""
 Faktor yang mempengaruhi prediksi:
