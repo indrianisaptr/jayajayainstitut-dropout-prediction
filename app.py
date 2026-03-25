@@ -27,8 +27,19 @@ grade2 = st.number_input("Nilai Semester 2", 0.0, 20.0, 10.0)
 approved1 = st.number_input("Jumlah MK Lulus Semester 1", 0, 20, 5)
 approved2 = st.number_input("Jumlah MK Lulus Semester 2", 0, 20, 5)
 
-tuition = st.selectbox("Status Pembayaran Biaya (1 = Lunas, 0 = Tidak)", [0, 1])
-debtor = st.selectbox("Memiliki Tunggakan (1 = Ya, 0 = Tidak)", [0, 1])
+tuition = st.selectbox(
+    "Status Pembayaran Biaya",
+    ["Lunas", "Belum Lunas"]
+)
+
+debtor = st.selectbox(
+    "Status Tunggakan",
+    ["Tidak Ada", "Ada"]
+)
+
+# mapping ke angka
+tuition = 1 if tuition == "Lunas" else 0
+debtor = 1 if debtor == "Ada" else 0
 
 # =========================
 # DATAFRAME INPUT
@@ -47,9 +58,19 @@ input_data = pd.DataFrame({
 # PREDICTION
 # =========================
 if st.button("Prediksi"):
-    prediction = model.predict(input_data)[0]
+    proba = model.predict_proba(input_data)[0][1]
 
-    if prediction == 1:
-        st.error("Mahasiswa Berisiko Dropout")
+    if proba > 0.7:
+        st.error(f"⚠️ Risiko Dropout Tinggi ({proba:.2%})")
+    elif proba > 0.4:
+        st.warning(f"⚠️ Risiko Sedang ({proba:.2%})")
     else:
-        st.success("Mahasiswa Tidak Berisiko Dropout")
+        st.success(f"✅ Risiko Rendah ({proba:.2%})")
+    
+st.markdown("""
+Faktor yang mempengaruhi prediksi:
+- Performa akademik (nilai semester)
+- Jumlah mata kuliah yang lulus
+- Status pembayaran
+- Kondisi finansial (tunggakan)
+""")
