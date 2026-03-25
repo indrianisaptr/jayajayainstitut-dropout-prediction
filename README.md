@@ -25,11 +25,11 @@ Cakupan proyek ini meliputi:
 ### Persiapan
 
 Sumber data:
-Dataset performa mahasiswa yang mencakup aspek akademik, ekonomi, dan demografi.
+Dataset performa mahasiswa yang mencakup aspek akademik, ekonomi, dan demografi, digunakan sebagai dasar analisis dan pemodelan prediksi dropout. (data.csv)
 
 Setup environment:
 ```
-pip install streamlit pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ## Business Dashboard
@@ -48,6 +48,15 @@ Link dashboard:
 https://lookerstudio.google.com/reporting/e85e6cdb-b1a7-45a0-afab-dc47fea294e0
 
 ## Menjalankan Sistem Machine Learning
+
+Prototype sistem machine learning dapat diakses secara online melalui Streamlit.
+
+Akses aplikasi melalui link berikut:
+https://jayajayainstitut-dropout-prediction-mdmpsfzpsxewfismqrqwmb.streamlit.app/
+
+Aplikasi ini memungkinkan pengguna memasukkan data mahasiswa dan mendapatkan prediksi apakah berisiko dropout atau tidak.
+
+### Alternatif Menjalankan Secara Lokal
 
 Prototype sistem machine learning dijalankan menggunakan Streamlit secara lokal.
 
