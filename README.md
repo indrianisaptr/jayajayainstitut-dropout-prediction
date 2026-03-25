@@ -82,13 +82,13 @@ streamlit run app.py
 Aplikasi ini memungkinkan pengguna memasukkan data mahasiswa dan mendapatkan prediksi apakah berisiko dropout atau tidak.
 
 ## Conclusion
-Berdasarkan hasil analisis, risiko dropout mahasiswa dipengaruhi oleh beberapa faktor utama, yaitu:
+Berdasarkan hasil analisis data, risiko dropout mahasiswa dipengaruhi oleh beberapa faktor utama, yaitu performa akademik, kondisi ekonomi, dan faktor demografi.
 
-- Performa akademik, di mana mahasiswa dengan nilai rendah cenderung memiliki risiko dropout lebih tinggi
-- Faktor ekonomi, seperti keterlambatan pembayaran dan adanya tunggakan
-- Faktor demografi, khususnya usia saat pendaftaran
+Mahasiswa dengan nilai akademik yang rendah, jumlah mata kuliah yang sedikit diselesaikan, serta memiliki kendala finansial seperti keterlambatan pembayaran atau tunggakan, cenderung memiliki risiko dropout yang lebih tinggi. Selain itu, usia saat pendaftaran juga menunjukkan adanya pengaruh terhadap kemungkinan mahasiswa menyelesaikan studi.
 
-Model machine learning yang dibangun mampu memprediksi risiko dropout dengan cukup baik dan dapat digunakan sebagai alat bantu dalam sistem deteksi dini.
+Model machine learning yang dibangun menggunakan Random Forest mampu memprediksi risiko dropout dengan performa yang cukup baik, dengan akurasi sebesar 88%.
+
+Hasil ini menunjukkan bahwa model dapat dimanfaatkan sebagai alat bantu dalam sistem deteksi dini, sehingga institusi dapat lebih cepat mengidentifikasi mahasiswa berisiko dan memberikan intervensi yang tepat.
 
 ### Rekomendasi Action Items
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
