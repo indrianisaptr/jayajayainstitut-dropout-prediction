@@ -82,13 +82,13 @@ streamlit run app.py
 Aplikasi ini memungkinkan pengguna memasukkan data mahasiswa dan mendapatkan prediksi apakah berisiko dropout atau tidak.
 
 ## Conclusion
-Berdasarkan hasil analisis data, risiko dropout mahasiswa dipengaruhi oleh beberapa faktor utama, yaitu performa akademik, kondisi ekonomi, dan faktor demografi.
+Berdasarkan hasil analisis data, permasalahan utama yang dihadapi institusi adalah kesulitan dalam mengidentifikasi mahasiswa yang berisiko dropout sejak dini. Hasil analisis menunjukkan bahwa risiko dropout dipengaruhi oleh beberapa faktor utama, yaitu performa akademik, kondisi ekonomi, dan faktor demografi. Mahasiswa dengan nilai akademik rendah, jumlah mata kuliah yang sedikit diselesaikan, serta memiliki kendala finansial seperti keterlambatan pembayaran atau tunggakan, cenderung memiliki risiko dropout yang lebih tinggi. Selain itu, usia saat pendaftaran juga turut berkontribusi terhadap kemungkinan mahasiswa menyelesaikan studi.
 
-Mahasiswa dengan nilai akademik yang rendah, jumlah mata kuliah yang sedikit diselesaikan, serta memiliki kendala finansial seperti keterlambatan pembayaran atau tunggakan, cenderung memiliki risiko dropout yang lebih tinggi. Selain itu, usia saat pendaftaran juga menunjukkan adanya pengaruh terhadap kemungkinan mahasiswa menyelesaikan studi.
+Untuk menjawab permasalahan tersebut, dibangun model machine learning menggunakan Random Forest yang mampu memprediksi risiko dropout dengan akurasi sebesar 88%. Model ini dapat membantu institusi dalam mengidentifikasi mahasiswa berisiko secara lebih cepat dan berbasis data, meskipun masih terdapat sejumlah kesalahan prediksi yang perlu diperhatikan dalam implementasi.
 
-Model machine learning yang dibangun menggunakan Random Forest mampu memprediksi risiko dropout dengan performa yang cukup baik, dengan akurasi sebesar 88%.
+Selain itu, proyek ini juga mencakup dashboard interaktif yang digunakan untuk memvisualisasikan faktor-faktor utama yang mempengaruhi dropout, sehingga memudahkan pihak institusi dalam memahami pola dan tren yang terjadi. Prototype sistem berbasis Streamlit memungkinkan pengguna melakukan prediksi secara langsung terhadap data mahasiswa, sehingga dapat digunakan sebagai alat bantu operasional dalam proses monitoring.
 
-Hasil ini menunjukkan bahwa model dapat dimanfaatkan sebagai alat bantu dalam sistem deteksi dini, sehingga institusi dapat lebih cepat mengidentifikasi mahasiswa berisiko dan memberikan intervensi yang tepat.
+Secara keseluruhan, solusi yang dibangun dapat diimplementasikan sebagai sistem deteksi dini (early warning system) dalam konteks nyata. Institusi dapat memanfaatkan sistem ini untuk melakukan identifikasi mahasiswa berisiko sejak semester awal, sehingga intervensi seperti pendampingan akademik, pemberian bantuan finansial, dan monitoring berkala dapat dilakukan lebih cepat dan tepat sasaran. Dengan demikian, solusi ini berkontribusi langsung dalam menurunkan angka dropout dan meningkatkan tingkat kelulusan mahasiswa.
 
 ### Rekomendasi Action Items
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
