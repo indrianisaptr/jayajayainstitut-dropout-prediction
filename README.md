@@ -27,8 +27,15 @@ Cakupan proyek ini meliputi:
 Sumber data:
 Dataset performa mahasiswa yang mencakup aspek akademik, ekonomi, dan demografi, digunakan sebagai dasar analisis dan pemodelan prediksi dropout. (data.csv)
 
+Link data:
+https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/students_performance/data.csv
+
 Setup environment:
 ```
+python -m venv venv
+source venv/bin/activate   # Linux / Mac
+venv\Scripts\activate      # Windows
+
 pip install -r requirements.txt
 ```
 
